@@ -10,13 +10,11 @@ namespace ProgressTracker.Models
     {
         public int Reps { get; set; }
         public int Weight { get; set; }
-        public DateTime Date { get; set; }
 
-        public Set(int reps, int weight, DateTime date)
+        public Set(int reps, int weight)
         {
             Reps = reps;
             Weight = weight;
-            Date = date;
         }
         public override string ToString()
         {

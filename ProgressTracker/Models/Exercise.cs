@@ -11,9 +11,11 @@ namespace ProgressTracker.Models
     {
         public string Name { get; set; }
         public List<Set> Sets { get; set; } = new List<Set>();
-        public Exercise(string name)
+        public DateTime DateTime { get; set; }
+        public Exercise(string name, DateTime dateTime)
         {
             Name = name;
+            DateTime = dateTime;
         }
     }
 }

@@ -9,14 +9,15 @@
     <Grid Margin="50">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="200"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column="0" DisplayMemberPath="Name" x:Name="exerciseListBox" SelectionChanged="exerciseListBox_SelectionChanged"/>
-        <ListBox Grid.Column="1" x:Name="repsAndSetsListBox"/>
+        <Button Grid.Row="0" Grid.ColumnSpan="2" Content="Save Exercises" Click="SaveButton_Click" HorizontalAlignment="Right" Margin="0,0,0,10"/>
+        <ListBox Grid.Row="1" Grid.Column="0" DisplayMemberPath="Name" x:Name="exerciseListBox" SelectionChanged="exerciseListBox_SelectionChanged"/>
+        <ListBox Grid.Row="1" Grid.Column="1" x:Name="repsAndSetsListBox"/>
     </Grid>
 
 </Window>
